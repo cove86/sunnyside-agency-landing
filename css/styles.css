@@ -35,18 +35,21 @@ h2 {
 
 p {
   font-family: 'Barlow', sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 
 .header {
   background-image: url(../images/mobile/image-header.jpg);
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
+  padding: 2em;
 }
 
 .nav {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 6em;
 }
 
 .heading {
@@ -54,6 +57,44 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 12em;
+}
+
+.main-heading {
+  padding-bottom: 2em;
+}
+
+.about-content {
+  padding: 4em;
+}
+
+.about-img {
+  background-image: url(../images/mobile/image-transform.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 364px;
+  margin-bottom: 2em;
+}
+
+.secondary-heading {
+  margin-bottom: 1em;
+}
+
+.about-description {
+  margin-bottom: 1em;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.about-link {
+  font-family: 'Fraunces', serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: underline;
+  text-decoration-color: hsl(51, 82%, 78%);
+  text-decoration-thickness: 0.4rem;
 }
 
 .attribution {
