@@ -12,6 +12,13 @@
       href="./images/favicon-32x32.png"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/styles.css" />
 
     <script defer src="js/script.js"></script>
@@ -22,39 +29,45 @@
     <header class="header">
       <nav class="nav">
         <img class="logo" src="images/logo.svg" />
-        <ul class="nav-list">
+        <ul class="nav-list hide">
           <li class="nav-item">About</li>
           <li class="nav-item">Services</li>
           <li class="nav-item">Projects</li>
           <li class="nav-item">Contact</li>
         </ul>
       </nav>
-      <h1 class="main-heading">We are creatives</h1>
+      <button class="btn-mobile-nav">
+        <img class="btn-mobile-icon" src="images/icon-hamburger.svg" />
+      </button>
+      <h1 class="main-heading center-text">We are creatives</h1>
+      <img clas="heading-arrow" src="images/icon-arrow-down.svg" />
     </header>
     <main>
       <section class="section-about">
         <div class="about-container">
-          <h2 class="secondary-heading">Transform your brand</h2>
+          <h2 class="secondary-heading center-text">Transform your brand</h2>
           <p class="about-description">
             We are a full-service creative agency specializing in helping brands
             grow fast. Engage your clients through compelling visuals that do
             most of the marketing for you.
           </p>
           <a class="about-link">Learn more</a>
-          <h2 class="secondary-heading">Stand out to the right audience</h2>
+          <h2 class="secondary-heading center-text">
+            Stand out to the right audience
+          </h2>
           <p class="about-description">
             Using a collaborative formula of designers, researchers,
             photographers, videographers, and copywriters, we’ll build and
             extend your brand in digital places.
           </p>
           <a class="about-link">Learn more</a>
-          <h3 class="tertiary-heading">Graphic design</h3>
+          <h3 class="tertiary-heading center-text">Graphic design</h3>
           <p class="about-description">
             Great design makes you memorable. We deliver artwork that
             underscores your brand message and captures potential clients’
             attention.
           </p>
-          <h3 class="tertiary-heading">Photography</h3>
+          <h3 class="tertiary-heading center-text">Photography</h3>
           <p class="about-description">
             Increase your credibility by getting the most stunning, high-quality
             photos that improve your business image.
@@ -63,22 +76,34 @@
       </section>
       <section class="section-testimonials">
         <div class="testimonials">
-          <h3 class="tertiary-heading">Client testimonials</h3>
+          <h3 class="tertiary-heading center-text">Client testimonials</h3>
           <div class="testimonial-container">
             <div class="testimonial">
-              We put our trust in Sunnyside and they delivered, making sure our
-              needs were met and deadlines were always hit. Emily R. Marketing
-              Director
+              <img class="testimonial-img" src="images/image-emily.jpg" />
+              <p class="testimonial-description">
+                We put our trust in Sunnyside and they delivered, making sure
+                our needs were met and deadlines were always hit.
+              </p>
+              <span class="testimonial-name">Emily R.</span>
+              <span class="job-title">Marketing Director</span>
             </div>
             <div class="testimonial">
-              Sunnyside’s enthusiasm coupled with their keen interest in our
-              brand’s success made it a satisfying and enjoyable experience.
-              Thomas S. Chief Operating Officer
+              <img class="testimonial-img" src="images/image-thomas.jpg" />
+              <p class="testimonial-description">
+                Sunnyside’s enthusiasm coupled with their keen interest in our
+                brand’s success made it a satisfying and enjoyable experience.
+              </p>
+              <span class="testimonial-name">Thomas S.</span>
+              <span class="job-title">Chief Operating Officer</span>
             </div>
             <div class="testimonial">
-              Incredible end result! Our sales increased over 400% when we
-              worked with Sunnyside. Highly recommended! Jennie F. Business
-              Owner
+              <img class="testimonial-img" src="images/image-jennie.jpg" />
+              <p class="testimonial-description">
+                Incredible end result! Our sales increased over 400% when we
+                worked with Sunnyside. Highly recommended!
+              </p>
+              <span class="testimonial-name">Jennie F.</span>
+              <span class="job-title">Business Owner</span>
             </div>
           </div>
         </div>
@@ -100,12 +125,12 @@
         <img class="social-icon" src="images/icon-pinterest.svg" />
       </div>
 
-      <div class="attribution">
+      <!-- <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Your Name Here</a>
-      </div>
+      </div> -->
     </footer>
   </body>
 </html>
