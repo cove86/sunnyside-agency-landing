@@ -38,11 +38,15 @@ p {
   font-size: 1.8rem;
 }
 
+.container {
+  /* max-width: 40em; */
+}
+
 .header {
   background-image: url(../images/mobile/image-header.jpg);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: center; */
   padding: 2em;
 }
 
@@ -69,12 +73,19 @@ p {
 }
 
 .about-img {
-  background-image: url(../images/mobile/image-transform.jpg);
-  background-position: center;
-  background-size: cover;
+  background-position: center center;
+  background-size: contain;
   background-repeat: no-repeat;
   min-height: 364px;
   margin-bottom: 2em;
+}
+
+.transform {
+  background-image: url(../images/mobile/image-transform.jpg);
+}
+
+.stand-out {
+  background-image: url(../images/mobile/image-stand-out.jpg);
 }
 
 .secondary-heading {
@@ -93,8 +104,63 @@ p {
   text-transform: uppercase;
   cursor: pointer;
   text-decoration: underline;
-  text-decoration-color: hsl(51, 82%, 78%);
   text-decoration-thickness: 0.4rem;
+}
+
+.transform-link {
+  text-decoration-color: hsl(51, 82%, 78%);
+}
+
+.stand-out-link {
+  text-decoration-color: hsl(7, 86%, 78%);
+}
+
+.tertiary-heading {
+  font-size: 2.4rem;
+}
+
+.about-bg {
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 592px;
+  max-width: 100%;
+  /* margin-bottom: 2em; */
+}
+
+.about-graphic {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+}
+
+.about-photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+}
+
+.section-testimonials {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+}
+
+.testimonial-heading {
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-img {
+  max-width: 25%;
+  border-radius: 50%;
+}
+
+.testimonial-description {
+  font-size: 1.8rem;
 }
 
 .attribution {
